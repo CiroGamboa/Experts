@@ -8,6 +8,7 @@ import Register from "./screens/Register";
 import NotFound from "./screens/NotFound";
 
 import NavBar from "./components/NavBar";
+import ResultList from "./screens/ResultList";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/search-results" element={<SearchResults />} />
           <Route path="/signup" element={<Register />} />
+          <Route path="/list" element={<ResultList />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
